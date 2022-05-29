@@ -1,0 +1,67 @@
+@import "_vars";
+
+.v-context {
+    &, & ul {
+        background-color: $background;
+        background-clip: padding-box;
+        border-radius: .25rem;
+        border: 1px solid var(--color3);
+        display: block;
+        margin: 0;
+        padding: 5px 0;
+        min-width: 10rem;
+        z-index: 1500;
+        position: fixed;
+        list-style: none;
+        box-sizing: border-box;
+        max-height: calc(100% - 50px);
+        overflow-y: auto;
+
+        > li {
+            margin: 0;
+            position: relative;
+            cursor: pointer;
+
+            > a {
+                display: block;
+                padding: .5rem 1.5rem;
+                font-weight: 400;
+                color: var(--color4);
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: var(--color2);
+                }
+
+                &:active {
+                    color: var(--color3);
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__sub {
+        > a:after {
+            content: "\2bc8";
+            float: right;
+            padding-left: 1rem;
+        }
+
+        > ul {
+          display: none;
+        }
+    }
+}

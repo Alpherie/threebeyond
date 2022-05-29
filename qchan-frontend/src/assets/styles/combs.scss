@@ -1,0 +1,36 @@
+@for $i from 1 through 9 {
+	.combination-#{$i} {
+		color: var(--color#{$i});
+		position: relative;
+
+		* {
+			color: var(--color#{$i});
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			opacity: 0.1;
+			background: var(--color#{$i});
+			z-index: -1;
+		}
+	}
+
+	.smooth-bg-#{$i} {
+		&:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			opacity: 0.1;
+			background: var(--color#{$i});
+			z-index: -1;
+		}
+	}
+}

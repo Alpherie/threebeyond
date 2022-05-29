@@ -1,0 +1,49 @@
+[package]
+name = "threebeyond"
+version = "0.2.0"
+authors = ["starfear <starfear@outlook.com>"]
+edition = "2018"
+
+[features]
+hcatpcha = []
+
+[dependencies]
+threebeyond-codegen-from-row = { path = "./threebeyond-codegen-from-row" }
+threebeyond-codegen-auth = { path = "./threebeyond-codegen-auth" }
+threebeyond-codegen-response = { path = "./threebeyond-codegen-response" }
+desumark = { path = "./desumark", features = ["error-serialize"] }
+async-trait  	 = "0.1.24"
+http 			 = "0.2.0"
+uuid             = { version = "0.8.1", features = ["v4", "serde"]}
+strfmt           = "0.1.6"
+cmd_lib          = "0.7.8"
+tokio            = {version = "0.2.6", features = ["fs", "process"]}
+htmlescape       = "0.3.1"
+maplit           = "1.0.2"
+lazy_static      = "1.4.0"
+regex            = "1"
+rand             = "0.7.2"
+futures          = "0.3.1"
+futures-util     = "0.3.1"
+chrono           = { version = "0.4.10", features = ["serde"]}
+validator        = "0.10"
+validator_derive = "0.10"
+env_logger       = "0.6"
+log              = "0.4.8"
+clap             = "2.33.0"
+actix            = "0.9.0"
+actix-service    = "1.0.5"
+actix-rt         = "1.0.0"
+actix-web        = { version = "2.0.0", features = ["openssl"] }
+actix-cors       = "0.2.0"
+actix-multipart  = "0.2.0"
+actix-files		 = "0.2.0"
+serde            = "1.0.104"
+serde_derive     = "1.0.104"
+serde_json       = "1.0.44"
+mysql_async      = "0.21.1"
+image 			 = "0.22.4"
+captcha 		 = "0.0.7"
+mime			 = "0.3.16"
+sha2			 = "0.9.1"
+trust-dns-resolver = "0.19.5"

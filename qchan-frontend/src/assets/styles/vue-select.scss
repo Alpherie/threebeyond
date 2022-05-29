@@ -1,0 +1,23 @@
+@import "vue-select/src/scss/vue-select.scss";
+
+.v-select {
+	$fg: var(--fg);
+	$bg: var(--color8);
+	background: $bg;
+
+	.vs__actions {
+		display: none;
+	}
+
+	.vs__search, .vs__dropdown-menu {
+		background: $bg;
+		color: $fg;
+		* {
+			color: $fg;
+		}
+	}
+
+	.vs__search::placeholder, .vs__selected {
+		color: var(--color4);
+	}
+}
